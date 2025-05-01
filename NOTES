@@ -1,0 +1,54 @@
+ctrl + /    => for comments
+
+alt + shift + ↓  = > to duplicate the line
+
+
+## String Functions ##
+🔤 Basic String Functions
+Function	Description	Example
+len()	Returns the length of a string	len("hello") → 5
+str()	Converts an object to a string	str(123) → "123"
+
+
+🧪 String Checking Methods
+Function	Description	Example
+isalnum()	True if all characters are alphanumeric	"abc123".isalnum() → True
+isalpha()	True if all characters are alphabetic	"abc".isalpha() → True
+isdigit()	True if all characters are digits	"123".isdigit() → True
+islower()	True if all characters are lowercase	"abc".islower() → True
+isupper()	True if all characters are uppercase	"ABC".isupper() → True
+isspace()	True if all characters are whitespace	" \t".isspace() → True
+startswith()	True if string starts with specified value	"hello".startswith("he") → True
+endswith()	True if string ends with specified value	"hello".endswith("lo") → True
+
+
+🔄 String Modification Functions
+Function	Description	Example
+lower()	Converts string to lowercase	"HELLO".lower() → "hello"
+upper()	Converts string to uppercase	"hello".upper() → "HELLO"
+capitalize()	Capitalizes first character	"hello".capitalize() → "Hello"
+title()	Capitalizes first letter of each word	"hello world".title() → "Hello World"
+strip()	Removes leading/trailing whitespace	" hello ".strip() → "hello"
+lstrip() / rstrip()	Removes leading / trailing whitespace	" hello ".lstrip() → "hello "
+replace(old, new)	Replaces substring with new string	"hello".replace("l", "x") → "hexxo"
+
+
+🔎 Searching & Finding
+Function	Description	Example
+find()	Returns index of first occurrence or -1	"hello".find("e") → 1
+rfind()	Returns last index of occurrence	"hello".rfind("l") → 3
+index()	Like find() but raises error if not found	"hello".index("e") → 1
+count()	Counts occurrences of a substring	"banana".count("a") → 3
+
+
+🔗 Splitting & Joining
+Function	Description	Example
+split()	Splits string into list	"a,b,c".split(",") → ['a', 'b', 'c']
+rsplit()	Splits from the right	"a,b,c".rsplit(",", 1) → ['a,b', 'c']
+join()	Joins elements of a list into a string	",".join(['a','b']) → "a,b"
+
+
+🧬 String Formatting
+Function	Description	Example
+format()	Formats strings with placeholders	"Hello, {}".format("World") → "Hello, World"
+f""	f-strings for formatting (Python 3.6+)	name = "Sam"; f"Hi {name}" → "Hi Sam"
