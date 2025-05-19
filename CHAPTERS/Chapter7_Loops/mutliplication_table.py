@@ -11,3 +11,5 @@ i = 1
 while(i < 11):
   print(f"{n} X  {i} = {n * i}")
   i += 1
+
+  # print(f"{n} X {11-i} = {n * (11-i)}") # this will print the multiplication table in reverse order
