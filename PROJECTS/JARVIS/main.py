@@ -4,7 +4,6 @@ import webbrowser  # (Currently unused) Can be used to open web pages if needed
 import pyttsx3  # Used for converting text to speech
 import musicLibrary
 import requests
-import client
 
 # pip install pocketsphinx (optional if you want offline speech recognition)
 
