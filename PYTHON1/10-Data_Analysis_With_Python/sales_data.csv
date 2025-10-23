@@ -1,0 +1,5 @@
+Order_ID,Date,Customer_Name,Product,Quantity,Price_per_Unit,Total_Sales
+ORD1001,2025-01-01,Riya,Headphones,2,56190,112380
+ORD1002,2025-01-02,Vikram,Tablet,5,79651,398255
+ORD1003,2025-01-03,Sneha,Tablet,3,21249,63747
+ORD1004,2025-01-04,Karan,Laptop,5,10603,53015
