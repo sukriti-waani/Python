@@ -1,0 +1,8 @@
+from log import logging
+
+def add(a, b):
+  logging.debug("The addition operation is taking place")
+  return a + b
+
+logging.debug("The addition function is being called")
+add(10, 20)
