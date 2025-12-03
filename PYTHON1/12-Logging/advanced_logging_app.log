@@ -1,0 +1,5 @@
+2025-12-04 00:55:42,716 - __main__ - DEBUG - This is a debug message
+2025-12-04 00:55:42,717 - __main__ - INFO - This is an info message
+2025-12-04 00:55:42,717 - __main__ - WARNING - This is a warning message
+2025-12-04 00:55:42,717 - __main__ - ERROR - This is an error message
+2025-12-04 00:55:42,717 - __main__ - CRITICAL - This is a critical message

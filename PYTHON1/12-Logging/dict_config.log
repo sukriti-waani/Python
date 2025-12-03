@@ -1,0 +1,4 @@
+2025-12-04 00:41:58 - DictLogger - DEBUG - This debug goes only to file
+2025-12-04 00:41:58 - DictLogger - INFO - This info goes only to file
+2025-12-04 00:41:58 - DictLogger - WARNING - This warning goes to file + console
+2025-12-04 00:41:58 - DictLogger - ERROR - This error goes to file + console

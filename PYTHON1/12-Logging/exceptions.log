@@ -1,0 +1,6 @@
+2025-12-04 00:33:19 - ExceptionLogger - ERROR - An exception occurred: Division by zero
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\AppData\Local\Temp\ipykernel_6796\3280838953.py", line 18, in logException
+    x = 10 / 0
+        ~~~^~~
+ZeroDivisionError: division by zero

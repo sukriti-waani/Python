@@ -1,0 +1,2 @@
+2025-12-04 00:37:59 - ContextLogger - DEBUG - contextual_logger - Line:27 - Starting contextual logging
+2025-12-04 00:37:59 - ContextLogger - INFO - some_function - Line:25 - Inside some_function

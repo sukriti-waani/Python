@@ -1,0 +1,4 @@
+2025-12-03 22:42:51 - FormatLogger - DEBUG - Debug message with custom format
+2025-12-03 22:42:51 - FormatLogger - INFO - Info message with custom format
+2025-12-03 22:42:51 - FormatLogger - WARNING - Warning message with custom format
+2025-12-03 22:42:51 - FormatLogger - ERROR - Error message with custom format
