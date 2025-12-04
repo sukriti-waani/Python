@@ -30,3 +30,27 @@ if __name__ == "__main__":
   # Loop through the results returned by executor.map()
   for result in results:
       print(result)
+
+
+"""
+===========================================
+MULTITHREADING vs MULTIPROCESSING
+===========================================
+
+
+Feature                 ThreadPoolExecutor (Multithreading)         ProcessPoolExecutor (Multiprocessing)
+----------------------------------------------------------------------------------------------------------
+Uses                    Threads                                     Separate Processes
+Best For                I/O-bound tasks                             CPU-bound tasks
+Parallelism             Not true parallel (GIL limits)              True parallel execution (no GIL)
+Speed                   Faster for small/light tasks                Faster for heavy computations
+Memory                  Shared memory among threads                 Separate memory for each process
+Overhead                Low                                         High (process creation cost)
+Examples                Downloading, file read, network calls       Heavy math, data processing, ML tasks
+
+SHORT SUMMARY:
+- Multithreading  = Best for WAITING tasks (I/O-bound)
+- Multiprocessing = Best for WORKING tasks (CPU-heavy)
+
+===========================================
+"""
