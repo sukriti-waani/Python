@@ -1,0 +1,89 @@
+"""
+=========================================================
+      DIFFERENCE BETWEEN MULTITHREADING & MULTIPROCESSING
+=========================================================
+
+1. Multithreading
+-----------------
+- Uses multiple THREADS within a single process.
+- Threads share the same memory space.
+- Limited by the GIL → only one thread runs Python code at a time.
+- Best for I/O-bound tasks (waiting tasks):
+    * File reading
+    * API calls / network operations
+    * Database queries
+- Lightweight → low overhead.
+- Faster for small tasks where CPU is not heavily used.
+
+2. Multiprocessing
+------------------
+- Uses multiple PROCESSES, each with its own Python interpreter.
+- Each process has separate memory space.
+- No GIL → true parallel execution on multiple CPU cores.
+- Best for CPU-bound tasks (heavy calculations):
+    * Mathematical operations
+    * Data processing
+    * Machine learning computations
+- Heavier → higher memory + process creation cost.
+- Much faster for heavy computation.
+
+---------------------------------------------------------
+Short Summary (Important for Exams):
+- Multithreading  → Best for WAITING tasks (I/O-bound).
+- Multiprocessing → Best for WORKING tasks (CPU-heavy).
+---------------------------------------------------------
+"""
+
+
+
+
+"""
+=========================================================
+     MULTITHREADING vs MULTIPROCESSING (TABLE FORMAT)
+=========================================================
+
+Feature                | Multithreading                      | Multiprocessing
+-------------------------------------------------------------------------------------
+Basic Unit             | Thread                              | Process
+Memory Usage           | Shared memory among threads         | Separate memory for each process
+GIL Effect             | Affected by GIL (not true parallel) | Not affected by GIL (true parallel)
+Best For               | I/O-bound tasks                     | CPU-bound tasks
+Speed                  | Faster for light tasks              | Faster for heavy computations
+Overhead               | Low (threads are lightweight)       | High (process creation cost)
+Execution Style        | Concurrent execution                | Parallel execution
+Use of CPU Cores       | Single core mainly (due to GIL)     | Multiple cores can be used fully
+Communication          | Easy (shared memory)                | Harder (needs IPC)
+Examples               | File read/write, network calls      | Math operations, data processing
+
+---------------------------------------------------------
+Super Short Summary:
+- Multithreading  → Best for WAITING tasks (I/O-bound)
+- Multiprocessing → Best for WORKING tasks (CPU-heavy)
+---------------------------------------------------------
+"""
+
+
+
+
+"""
+===========================================
+MULTITHREADING vs MULTIPROCESSING
+===========================================
+
+
+Feature                 ThreadPoolExecutor (Multithreading)         ProcessPoolExecutor (Multiprocessing)
+----------------------------------------------------------------------------------------------------------
+Uses                    Threads                                     Separate Processes
+Best For                I/O-bound tasks                             CPU-bound tasks
+Parallelism             Not true parallel (GIL limits)              True parallel execution (no GIL)
+Speed                   Faster for small/light tasks                Faster for heavy computations
+Memory                  Shared memory among threads                 Separate memory for each process
+Overhead                Low                                         High (process creation cost)
+Examples                Downloading, file read, network calls       Heavy math, data processing, ML tasks
+
+SHORT SUMMARY:
+- Multithreading  = Best for WAITING tasks (I/O-bound)
+- Multiprocessing = Best for WORKING tasks (CPU-heavy)
+
+===========================================
+"""
