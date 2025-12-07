@@ -46,6 +46,13 @@ def form():
   # If request is GET, show the form.html page
   return render_template('form.html')
 
+@app.route('/submit', methods=['GET', 'POST'])
+def submit():
+  if request.method == 'POST':
+    name = request.form['name']
+    return f'Hello, {name}!'
+  return render_template('form.html')
+
 # This ensures the app runs only when this file is executed directly
 if __name__ == '__main__':
   # Starts the Flask development server
