@@ -9,3 +9,4 @@ memory-profiler
 streamlit
 scikit-learn
 bs4
+flask
