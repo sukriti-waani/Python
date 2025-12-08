@@ -1,3 +1,8 @@
+'''
+Streamlit is an open-source app framework for Machine Learning and Data Science projects. It allows us to create beautiful web applications for our machine learning and data science projects with simple Python scripts.
+'''
+
+
 import streamlit as st
 import pandas as pd
 import numpy as np
